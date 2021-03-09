@@ -1,9 +1,15 @@
 body {
-
+    background-image: url(img/paper.png);
 }
 .title {
-
+    padding: 20px;
+    border-color: white;
+    color: white;
 }
-.main {
-    background-image: url(paper-3164718_1920.png);
+.bg {
+    
+    height: 900px;
+    width: 2000px;
+    text-align: center;
+    color:DodgerBlue;
 }
