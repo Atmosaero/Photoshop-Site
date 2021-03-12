@@ -1,15 +1,123 @@
-body {
-    background-image: url(img/paper.png);
+h1 {
+	color: blue;
 }
-.title {
-    padding: 20px;
-    border-color: white;
-    color: white;
+ul {
+	color: gray;
 }
-.bg {
-    
-    height: 900px;
-    width: 2000px;
-    text-align: center;
-    color:DodgerBlue;
+#navList {
+	border: 2px solid red;
+}
+.nav-link {
+	color: #444444;
+}
+.nav-link.active {
+	color: #30a3f0;
+}
+.list {
+	border: 2px solid blue;
+}
+.link {
+
+}
+.info-item,
+.info-link {
+	color: rgba(255, 255,255,0.3);
+}
+.title p {
+	color: #30a3f0;
+	font-size: 18px;
+}
+.title h1 {
+	color: #fff;
+	margin: 50px 2px;
+}
+.btn {
+	font-size: 14px;
+	font-weight: 700;
+	color: #30a3f0;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid #30a3f0;
+	padding: 20px 42px;
+	border-radius: 5px;
+	transition: background-color 2s linear all 2s linear;
+}
+.photo-item:hover {
+	background-color: rgba(34,34,34,0.8);
+}
+.photo-item:hover .photo-text {
+	display: block;
+}
+.grid {
+	display: grid;
+	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+	grid-gap: 70px 100px;
+}
+.grid .description {
+	margin-bottom: 0;
+}
+.grid-line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.grid-line-text {
+	flex-basis: calc(100% - 126px);
+}
+.page-bg {
+	background-image: url(../img/banner.png);
+	background-size: cover;
+	padding-top: 110px;
+	padding-bottom: 112px;
+}
+.page-bg .title {
+	margin-bottom: 0;
+}
+.page-bg .title h1 {
+	margin-bottom: 40px;
+}
+.box-item {
+	padding: 60px 30px 60px;
+}
+.mockup {
+	width: 388px;
+	height: 346px;
+	right: 15px;
+}
+.blog {
+	grid-template: 1fr 1fr 1fr 1fr;
+}
+}
+.box-stat h3 span {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.box-stat h3 {
+	font-size: 35px;
+}
+.photo {
+	flex-wrap: wrap;
+}
+.photo-item {
+	flex-basis: 50%;
+	height: 250px;
+}
+.photo-item:last-child .grid-item {
+	display:none;
+}
+}
+@media(max-width:992) {
+	.wrappaer {
+		max-width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
+}
+@media(max-width:978px) {
+	.nav-top {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 }
